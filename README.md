@@ -1,4 +1,4 @@
-# Spring Boot Kotlin example
+# Tic-Tac-Toe Spring Boot Kotlin example
 
 ## Prerequisites
 * JDK 1.8
