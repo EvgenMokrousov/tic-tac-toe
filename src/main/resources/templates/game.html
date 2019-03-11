@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+    <div id="feedback"></div>
+
+    <div id="current_game_screen">
+        <div id="players">
+            <div id="owner" class="youTurn"></div><div id="opponent"></div>
+        </div>
+
+        <div id="game_space"></div>
+        <div id="time"></div>
+        <input type="hidden" id="data-char" />
+        <form id="dostep">
+            <input type="hidden" id="col" />
+            <input type="hidden" id="row" />
+            <button type="submit" id="btn-dostep">Do step</button>
+        </form>
+        <div id="param"><input type="hidden" name="whoIs" /> </div>
+
+    </div>
+    <div id="alltext"></div>
+    <input type="hidden" id="accessToken" th:value="${accessToken}"/>
+
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/time.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+</html>

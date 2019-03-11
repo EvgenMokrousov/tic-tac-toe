@@ -1,0 +1,55 @@
+BODY {
+    background: white;
+    font: 11pt monospace;
+   }
+INPUT { font: 11pt monospace; height: 19px }
+BUTTON, SELECT { font: 11pt monospace; height: 25px }
+
+
+#feedback { font-size: smaller; color: red; }
+#gamelist_container { width: 400px; padding: 6px; border: 1px solid blue; }
+#gamelist_container .data-state {
+    position: relative;
+    border: 1px solid blue;
+    height: 40px;
+    background-color: #87ceeb36;
+    margin: 5px;
+    }
+
+#gamelist_container .data-state DIV { position: absolute; height: 100%; }
+
+#gamelist_container .ow_name { width: 30%; }
+#gamelist_container .game_state { left: 40%; width: 20%; }
+#gamelist_container .opp_name { right: 0; width: 30%; }
+
+#gamelist_container .ready { left: 30%; width: 40%; background: #00800063; cursor: pointer; }
+#gamelist_container .playing {left: 30%;width: 40%;background: #ff000070;cursor: pointer;}
+#gamelist_container .done {left: 30%;width: 40%;background: #ffa50085;cursor: pointer;}
+.state-name { width: 65%; border: 0; }
+.time {right: 0;width: 35%;border: 0;font-size: smaller;text-align: center;padding-top: 15%;}
+.winner {text-decoration:underline; color:orange; font-weight: bold;}
+
+#current_game_screen #owner {
+    width: 200px;
+    position: absolute;
+    }
+#current_game_screen #opponent {
+    left: 205px;
+    position: relative;
+    }
+
+#current_game_screen TABLE {
+    width: 300px;
+    border-collapse: collapse;
+    border: 6px solid white;
+}
+#current_game_screen TD {
+    padding: 3px;
+    border: 5px solid orange;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#current_game_screen .youTurn { text-decoration:underline; font-weight: bold; }
+#current_game_screen .winner { text-decoration:underline; font-weight: bold; color: gold; }
