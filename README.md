@@ -1,8 +1,9 @@
 # Spring Boot Kotlin example
 
 ## Prerequisites
-* JDK
+* JDK 1.8
 * MySQL
+  - run sql command: `CREATE DATABASE  IF NOT EXISTS tictactoe;`
 
 ## Installation
 ```bash
